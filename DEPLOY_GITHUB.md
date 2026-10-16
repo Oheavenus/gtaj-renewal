@@ -1,10 +1,18 @@
-# GitHub Pages に公開する
+# GTAJテストサイトを公開する（GitHub Pages）
 
-1. https://github.com/new にアクセス。
-2. リポジトリ名 `gtaj-renewal`、`Public`、README の自動生成は無効。
-3. 作成後、ブラウザの `Add file` → `Upload files` で、このディレクトリの中身をすべてアップロードします（`.git` フォルダは不要）。
-4. `Settings` → `Pages` → `Build and deployment` → `Deploy from a branch`。
-5. `Branch: main`、`Folder: /(root)` を選択して保存。
-6. 公開先: https://oheavenus.github.io/gtaj-renewal/
+公開リポジトリ： https://github.com/Oheavenus/gtaj-renewal
 
-この手順は、GitHub リポジトリと Pages の作成権限が現在のChatGPT連携で扱えない場合のものです。
+HTML全8ページ・CSS・JavaScriptは `main` に登録済みです。
+
+## 初回のみ必要な設定
+
+1. https://github.com/Oheavenus/gtaj-renewal/settings/pages を開く。
+2. **Build and deployment** の **Source** で **Deploy from a branch** を選択。
+3. **Branch** に `main`、フォルダに `/(root)` を指定。
+4. **Save** を押す。
+
+公開URL： https://oheavenus.github.io/gtaj-renewal/
+
+公開後に `main` のHTML・CSS等を更新すると、Pagesの設定が有効である限り再デプロイされます。
+
+現行 `https://gtaj.or.jp/` は変更されません。この試作は検索エンジン向けに `noindex` を指定していますが、URLを知っている方は閲覧できます。
